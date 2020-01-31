@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Latihan Responsive Template</title>
+    <style media="screen">
+      *{
+        box-sizing : border-box;
+      }
+      [class*="col-"]{
+        padding : 15px; float : left; width : 100%;
+      }
+      .header {
+        background : url("logo-white.png") #5e0001 no-repeat center;
+        background-size : 100px 100px;
+        height : 200px;
+      }
+      @media only screen and (min-width : 600px) {
+        /* For Tablets */
+        .col-s-1 {width : 8.33%;}
+        .col-s-2 {width : 16.66%;}
+        .col-s-3 {width : 25%;}
+        .col-s-4 {width : 33.33%;}
+        .col-s-5 {width : 41.66%;}
+        .col-s-6 {width : 50%;}
+        .col-s-7 {width : 58.33%;}
+        .col-s-8 {width : 66.66%;}
+        .col-s-9 {width : 75%;}
+        .col-s-10 {width : 83.33%;}
+        .col-s-11 {width : 91.66%;}
+        .col-s-12 {width : 100%;}
+        .header{
+          background : url("logo.png") #5e0001 no-repeat center;
+          height : 250px;
+        }
+      }
+      @media only screen and (min-width : 768px) {
+        /* For Desktop */
+        .col-1 {width : 8.33%;}
+        .col-2 {width : 16.66%;}
+        .col-3 {width : 25%;}
+        .col-4 {width : 33.33%;}
+        .col-5 {width : 41.66%;}
+        .col-6 {width : 50%;}
+        .col-7 {width : 58.33%;}
+        .col-8 {width : 66.66%;}
+        .col-9 {width : 75%;}
+        .col-10 {width : 83.33%;}
+        .col-11 {width : 91.66%;}
+        .col-12 {width : 100%;}
+        .header{
+          background : url("logo.png") #5e0001 no-repeat center;
+          height : 250px;
+        }
+      }
+      .container{
+        width : 80%;
+        margin : 0 auto ;
+      }
+      .sidebar ul{
+        list-style-type : none;
+        padding : 0;
+        margin : 0;
+        overflow : hidden;
+        background : red;
+      }
+      .sidebar ul li {
+        float : left;
+        width : 100%;
+        border-bottom : 2px double #fff;
+      }
+      .sidebar ul li a {
+        display : block;
+        text-decoration : none;
+        color : #fff;
+        padding : 15px;
+        text-align : left;
+      }
+      .content{ text-align : justify;}
+      .footer{
+        background: #5e0001;
+        color : #fff;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <!-- header dimulai -->
+      <div class="col-12 header">
+        <!-- akhir header -->
+      </div>
+      <!-- awal menu -->
+      <div class="col-3 col-s-5 sidebar">
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Profil</a></li>
+          <li><a href="#">Kontak Kami</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Gatau Apa</a></li>
+        </ul>
+      </div>
+      <!-- akhir menu -->
+      <!-- awal konten -->
+      <div class="col-9 col-s-7 content">
+        <p>The energy crisis triggered by the increase in world oil prices has also crushed the lives of various layers
+of society in Indonesia, because the level of demand for fuel oil continues to increase, therefore
+alternative energy is needed to replace BBM, so that the chain of life on this earth can run well. Many
+non-BBM alternative energy can be developed, one of which is biogas. The utilization of biogas energy
+ sources has begun to be developed at the Swadaya Pandan Mulyo Agriculture and Rural Training Center
+ but the production capacity of the existing system is still not optimal, this is because the existing
+equipment is still manual and simple so extra energy is needed in order to continue producing biogas.
+ Seeing these problems we made technological innovations needed to overcome this problem, namely
+with BIOTHINGS V2 as the development of an automatic biogas mixer based on IoT (Internet of Things).
+BIOTHINGS V2 is an automatic biogas mixer that uses an electric motor as the main driving system.
+The electric motor will move automatically when cow dung is inserted into the mixing place that has
+been installed ultrasonic sensors. In general, BIOTHINGS load sensors as inputs, processors by
+microcontrollers, and outputs in graphical use r interfaces through the web, and Android smartphones
+ so that monitoring and making biogas becomes more effective.
+</p>
+      </div>
+      <!-- akhir konten -->
+      <!-- awal footer -->
+      <div class="col-12 footer">
+        &copy; Copyright by Sall
+      </div>
+      <!-- akhir footer -->
+    </div>
+  </body>
+</html>
